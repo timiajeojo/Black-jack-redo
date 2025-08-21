@@ -48,3 +48,16 @@ function renderGame() {
   
 if (sum <= 20) {
  message = "Do you want to draw new card?" }
+
+else if (sum === 21) {
+    message = "you've got balckjack!"
+    hasBlackJack = true
+     }  else {
+       message = "you're out!" 
+       isAlive = false
+     }
+     
+     //CASH OUT 
+      messageEl.textContent = message
+      
+}
